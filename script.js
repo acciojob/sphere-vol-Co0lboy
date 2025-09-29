@@ -3,7 +3,7 @@ function volume_sphere(event) {
 	event.preventDefault();
 
 	const radius=parseFloat(document.getElementById('radius').value);
-	if(isNaN(radius)||radius<0){
+	if(radius<0){
 		alert("Please enter a valid non-negative number.");
 		document.getElementById('volume').value='';
 		return;
